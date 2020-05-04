@@ -18,10 +18,9 @@ def output_array(array)
 end 
 
 def return_string_array(array)
-  count = 0
-  while count < array.length
-    array[count] = array[count].to_s
-    count += 1
+  new_arr = []
+  for n in array
+    new_arr.push(n.to_s())
   end
-  array
+  new_arr
 end
