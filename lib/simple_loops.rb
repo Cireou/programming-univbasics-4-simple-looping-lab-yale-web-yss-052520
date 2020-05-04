@@ -1,3 +1,5 @@
+require binding
+
 # Write your methods here
 def loop_message_five_times(msg)
   5.times do
@@ -21,6 +23,7 @@ def return_string_array(array)
   count = 0
   while count < array.length
     array[count].to_s()
+    binding.pry
     count += 1
   end
   array
