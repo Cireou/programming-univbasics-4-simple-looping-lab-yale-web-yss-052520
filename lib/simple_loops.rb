@@ -22,4 +22,5 @@ def return_string_array(array)
   while count < array.length
     array[count].to_s()
   end
+  array
 end
